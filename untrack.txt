@@ -1,0 +1,5 @@
+package mian
+import "fmt"
+fun main(){
+	fmt.Println("hello go!")
+}
