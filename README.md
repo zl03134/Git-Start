@@ -210,9 +210,9 @@
     * 在fetch的时候把数据下载到远程跟踪分支里面
     * 注意成员开辟新分支提交的时候 经理在fetch的时候要创建对应的分支不用加别名
     * 主分支和远程跟踪分支自动绑定的功能(默认情况下push的时候)
-    * 建立同步关系 git branch -u (远程跟踪分支) 注意要在那个分支里面输入这个命令
-    * git checkout --track remote别名/分支名  最自动创建本地分支并且与远程跟踪分支绑定
-    * git checkout -b 分支名 remote别名/分支名 效果与上面一样     
+    * git branch -u (当前分支 跟踪-> 远程跟踪分支) 
+    * git checkout --track (跟踪-> 远程跟踪分支*并*自动命名) 
+    * git checkout -b 分支名 remote别名/分支名 (跟踪-> 远程跟踪分支*不*自动命名) 
 ### 删除远程分支
     * git push use(别名) --delete (分支名)  删除远程分支
     * git remote prune use --dry-run  列出仍在远程跟踪但是远程分支已经被删除的无用分支
